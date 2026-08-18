@@ -1,0 +1,160 @@
+/* ===========================================================
+   LOGICUS ACADEMY — learn.logicus.online styles
+   Extends style.css (design tokens, header, footer, buttons)
+=========================================================== */
+
+/* ============ HERO ============ */
+.learn-hero {
+    background: linear-gradient(180deg, var(--cream) 0%, #ffffff 100%);
+    padding: 76px 0 56px;
+    text-align: center;
+}
+.learn-hero-inner { max-width: 760px; margin: 0 auto; }
+.learn-hero h1 {
+    font-size: clamp(2.1rem, 4.5vw, 3.1rem);
+    letter-spacing: -0.01em;
+}
+.learn-hero-lead {
+    font-size: 1.1rem;
+    color: var(--charcoal);
+    max-width: 60ch;
+    margin: 0 auto;
+}
+
+/* ============ JENJANG TABS ============ */
+.jenjang-section { padding: 8px 0 96px; background: var(--white); }
+
+.jenjang-tabs {
+    display: inline-flex;
+    background: var(--cream);
+    border-radius: 999px;
+    padding: 5px;
+    gap: 4px;
+    box-shadow: var(--shadow-card);
+}
+.jenjang-tab {
+    border: none;
+    background: transparent;
+    padding: 12px 34px;
+    border-radius: 999px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--slate);
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.jenjang-tab:hover { color: var(--navy); }
+.jenjang-tab.is-active { background: var(--navy); color: var(--white); }
+
+.jenjang-panel { display: none; margin-top: 40px; }
+.jenjang-panel.is-active { display: block; }
+.jenjang-panel-lead {
+    color: var(--slate);
+    font-size: 0.92rem;
+    margin-bottom: 24px;
+}
+
+/* ============ MAPEL CARDS ============ */
+.mapel-grid { display: grid; gap: 20px; }
+.mapel-grid-1 { grid-template-columns: minmax(0, 420px); }
+.mapel-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.mapel-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.mapel-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--cream);
+    border-radius: var(--radius-md);
+    padding: 28px 26px;
+    border: 1px solid transparent;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    text-decoration: none;
+}
+a.mapel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: rgba(255, 150, 16, 0.3);
+}
+.mapel-icon {
+    width: 52px; height: 52px;
+    border-radius: 14px;
+    background: var(--navy);
+    color: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+}
+.mapel-card-soon .mapel-icon { background: rgba(19, 64, 90, 0.14); color: var(--navy); }
+.mapel-body { flex: 1; }
+.mapel-body h3 { font-size: 1.15rem; margin-bottom: 8px; }
+.mapel-body p { color: var(--charcoal); font-size: 0.92rem; margin-bottom: 0; }
+
+.mapel-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--slate);
+    background: rgba(92, 122, 153, 0.12);
+    padding: 5px 12px;
+    border-radius: 999px;
+    width: fit-content;
+}
+.mapel-status-ready {
+    color: var(--white);
+    background: var(--orange);
+}
+.mapel-card-soon { opacity: 0.8; }
+
+/* ============ CARA BELAJAR ============ */
+.cara-belajar { background: var(--navy); padding: 88px 0; }
+.cara-belajar h2 { color: var(--white); }
+
+.cara-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 40px;
+}
+.cara-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-md);
+    padding: 28px 26px;
+}
+.cara-index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--orange);
+    color: var(--white);
+    font-family: var(--font-display);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.cara-card h3 { color: var(--white); font-size: 1.05rem; margin-bottom: 10px; }
+.cara-card p { color: #D7E1EA; margin-bottom: 0; font-size: 0.92rem; }
+
+/* ============ CTA (page variant) ============ */
+.cta-band-btn { background: var(--navy); color: var(--white); flex-shrink: 0; }
+.cta-band-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(19, 64, 90, 0.35); }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 980px) {
+    .mapel-grid-2, .mapel-grid-4 { grid-template-columns: repeat(2, 1fr); }
+    .cara-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+    .jenjang-tabs { display: flex; width: 100%; }
+    .jenjang-tab { flex: 1; padding: 12px 10px; }
+    .mapel-grid-1, .mapel-grid-2, .mapel-grid-4 { grid-template-columns: 1fr; }
+    .cta-inner { text-align: left; }
+}

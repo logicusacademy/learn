@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materi Kimia SMA Kelas X, XI &amp; XII — Logicus Academy</title>
-    <meta name="description" content="Materi Kimia SMA lengkap untuk Kelas X, XI, dan XII — disusun mengikuti Capaian Pembelajaran terbaru dan pendekatan Pembelajaran Mendalam, dengan fokus memahami konsep bukan menghafal rumus.">
+    <title>Pilihan Materi Belajar SD, SMP &amp; SMA — Logicus Academy</title>
+    <meta name="description" content="Pilih jenjang dan mata pelajaran wajibmu: Matematika untuk SD, Matematika &amp; IPA untuk SMP, serta Matematika, Fisika, Kimia, dan Biologi untuk SMA — disusun dengan metode berpikir Logicus Academy.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="kimia.css">
+    <link rel="stylesheet" href="learn.css">
 </head>
 <body>
 
@@ -40,9 +40,9 @@
 
             <nav class="main-nav" id="main-nav">
                 <ul>
-                    <li><a href="#kelas">Kelas</a></li>
-                    <li><a href="#pembelajaran-mendalam">Pembelajaran Mendalam</a></li>
-                    <li><a href="https://belajar.logicus.online">Mapel Lain</a></li>
+                    <li><a href="#jenjang">Jenjang</a></li>
+                    <li><a href="#cara-belajar">Cara Belajar</a></li>
+                    <li><a href="https://tka.logicus.online">Materi TKA</a></li>
                     <li><a href="https://blog.logicus.online">Blog</a></li>
                 </ul>
                 <div class="nav-actions">
@@ -57,228 +57,124 @@
     </header>
 
     <main id="main">
-        <!-- ============ BREADCRUMB ============ -->
-        <div class="breadcrumb-bar">
-            <div class="container">
-                <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <a href="https://belajar.logicus.online">Belajar</a>
-                    <span aria-hidden="true">/</span>
-                    <a href="https://belajar.logicus.online/#jenjang-sma">SMA</a>
-                    <span aria-hidden="true">/</span>
-                    <span aria-current="page">Kimia</span>
-                </nav>
-            </div>
-        </div>
-
         <!-- ============ HERO ============ -->
-        <section class="kimia-hero">
-            <div class="container kimia-hero-inner">
-                <span class="mapel-icon mapel-icon-lg" aria-hidden="true"><i class="fa-solid fa-flask"></i></span>
-                <p class="eyebrow" data-reveal>Mata Pelajaran Wajib SMA</p>
-                <h1 data-reveal>Materi Kimia SMA, Kelas X hingga XII</h1>
-                <p class="kimia-hero-lead" data-reveal>Dari struktur atom hingga kimia organik — disusun bertahap sesuai Capaian Pembelajaran terbaru, dengan pendekatan yang menekankan pemahaman konsep, bukan hafalan reaksi dan rumus.</p>
+        <section class="learn-hero">
+            <div class="container learn-hero-inner">
+                <p class="eyebrow" data-reveal>Pusat Materi Belajar Logicus Academy</p>
+                <h1 data-reveal>Pilih Jenjang dan Mata Pelajaranmu</h1>
+                <p class="learn-hero-lead" data-reveal>Materi mata pelajaran wajib untuk SD, SMP, dan SMA — disusun bertahap sesuai jenjang, dengan pendekatan yang sama: memahami konsep, bukan menghafal rumus.</p>
             </div>
         </section>
 
-        <!-- ============ CATATAN KURIKULUM ============ -->
-        <section class="kurikulum-note-section">
+        <!-- ============ JENJANG TABS + MAPEL ============ -->
+        <section class="jenjang-section" id="jenjang">
             <div class="container">
-                <div class="kurikulum-note" data-reveal>
-                    <i class="fa-solid fa-circle-info"></i>
-                    <div>
-                        <p><strong>Catatan penting soal struktur kelas.</strong> Berdasarkan Capaian Pembelajaran Kimia terbaru (SK Kepala BSKAP No. 046/H/KR/2025) yang mengikuti Permendikdasmen No. 12 &amp; 13 Tahun 2025, Kimia sebagai mata pelajaran formal resmi diajarkan mulai <strong>Kelas XI (Fase F)</strong> — Kelas X (Fase E) berisi IPA terpadu.</p>
-                        <p>Materi Kelas X di halaman ini kami susun sebagai <strong>fondasi pengantar</strong> — konsep dasar yang lazim diperkenalkan sekolah sebelum masuk ke Kimia formal di Kelas XI, mengikuti praktik yang masih banyak dipakai pada masa transisi kurikulum.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============ KELAS TABS ============ -->
-        <section class="kelas-section" id="kelas">
-            <div class="container">
-                <p class="section-eyebrow" data-reveal>Materi per Kelas</p>
-                <h2 data-reveal>Pilih Kelas</h2>
-
-                <div class="kelas-tabs" role="tablist" aria-label="Pilih kelas" data-reveal>
-                    <button class="kelas-tab is-active" role="tab" aria-selected="true" aria-controls="kelas-x" data-target="kelas-x">Kelas X</button>
-                    <button class="kelas-tab" role="tab" aria-selected="false" aria-controls="kelas-xi" data-target="kelas-xi">Kelas XI</button>
-                    <button class="kelas-tab" role="tab" aria-selected="false" aria-controls="kelas-xii" data-target="kelas-xii">Kelas XII</button>
+                <div class="jenjang-tabs" role="tablist" aria-label="Pilih jenjang" data-reveal>
+                    <button class="jenjang-tab is-active" role="tab" aria-selected="true" aria-controls="jenjang-sd" data-target="jenjang-sd">SD</button>
+                    <button class="jenjang-tab" role="tab" aria-selected="false" aria-controls="jenjang-smp" data-target="jenjang-smp">SMP</button>
+                    <button class="jenjang-tab" role="tab" aria-selected="false" aria-controls="jenjang-sma" data-target="jenjang-sma">SMA</button>
                 </div>
 
-                <!-- KELAS X -->
-                <div class="kelas-panel is-active" id="kelas-x" role="tabpanel">
-                    <div class="kelas-panel-head">
-                        <span class="regulasi-tag">Fase E · Fondasi/Pengantar</span>
-                        <p>4 topik pengantar sebelum masuk Kimia formal di Kelas XI.</p>
-                    </div>
-                    <div class="topik-grid topik-grid-4">
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-flask-vial"></i> Hakikat Ilmu Kimia &amp; Kerja Ilmiah</h3>
-                            <ul>
-                                <li>Peran kimia dalam kehidupan sehari-hari</li>
-                                <li>Metode ilmiah &amp; keselamatan kerja di laboratorium</li>
-                                <li>Pengenalan alat &amp; bahan kimia dasar</li>
-                            </ul>
-                        </article>
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-atom"></i> Struktur Atom</h3>
-                            <ul>
-                                <li>Perkembangan model atom</li>
-                                <li>Partikel penyusun atom &amp; notasi atom</li>
-                                <li>Konfigurasi elektron</li>
-                            </ul>
-                        </article>
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-table-cells"></i> Sistem Periodik Unsur</h3>
-                            <ul>
-                                <li>Perkembangan tabel periodik</li>
-                                <li>Golongan &amp; periode</li>
-                                <li>Sifat keperiodikan unsur</li>
-                            </ul>
-                        </article>
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-link"></i> Ikatan Kimia</h3>
-                            <ul>
-                                <li>Ikatan ion &amp; ikatan kovalen</li>
-                                <li>Ikatan logam</li>
-                                <li>Bentuk molekul sederhana</li>
-                            </ul>
-                        </article>
+                <!-- SD -->
+                <div class="jenjang-panel is-active" id="jenjang-sd" role="tabpanel">
+                    <p class="jenjang-panel-lead">1 mata pelajaran wajib untuk jenjang SD.</p>
+                    <div class="mapel-grid mapel-grid-1">
+                        <a href="https://tka.logicus.online/#materi-sd" class="mapel-card">
+                            <span class="mapel-icon" aria-hidden="true"><i class="fa-solid fa-calculator"></i></span>
+                            <div class="mapel-body">
+                                <h3>Matematika</h3>
+                                <p>Bilangan, pengukuran, geometri, dan data — fondasi numerasi yang jadi bekal untuk semua jenjang selanjutnya.</p>
+                            </div>
+                            <span class="mapel-status mapel-status-ready">Tersedia <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
                     </div>
                 </div>
 
-                <!-- KELAS XI -->
-                <div class="kelas-panel" id="kelas-xi" role="tabpanel" hidden>
-                    <div class="kelas-panel-head">
-                        <span class="regulasi-tag">Fase F · Kimia Formal Dimulai</span>
-                        <p>5 kelompok materi inti Kimia Kelas XI.</p>
-                    </div>
-                    <div class="topik-grid topik-grid-5">
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-square-root-variable"></i> Stoikiometri &amp; Larutan</h3>
-                            <ul>
-                                <li>Konsep mol &amp; hukum dasar kimia</li>
-                                <li>Larutan elektrolit &amp; non-elektrolit</li>
-                                <li>Reaksi reduksi-oksidasi (dasar)</li>
-                            </ul>
-                        </article>
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-fire"></i> Termokimia &amp; Laju Reaksi</h3>
-                            <ul>
-                                <li>Entalpi &amp; perubahan entalpi reaksi</li>
-                                <li>Hukum Hess &amp; kalorimetri</li>
-                                <li>Faktor-faktor &amp; orde laju reaksi</li>
-                            </ul>
-                        </article>
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-scale-balanced"></i> Kesetimbangan &amp; Asam Basa</h3>
-                            <ul>
-                                <li>Kesetimbangan kimia (Kc &amp; Kp)</li>
-                                <li>Pergeseran kesetimbangan</li>
-                                <li>Teori asam basa &amp; perhitungan pH</li>
-                            </ul>
-                        </article>
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-vial-circle-check"></i> Penyangga, Hidrolisis &amp; Ksp</h3>
-                            <ul>
-                                <li>Larutan penyangga (buffer)</li>
-                                <li>Hidrolisis garam</li>
-                                <li>Titrasi asam basa &amp; hasil kali kelarutan</li>
-                            </ul>
-                        </article>
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-droplet"></i> Koloid</h3>
-                            <ul>
-                                <li>Sistem koloid, suspensi &amp; larutan sejati</li>
-                                <li>Sifat-sifat koloid</li>
-                                <li>Penerapan koloid dalam kehidupan</li>
-                            </ul>
-                        </article>
+                <!-- SMP -->
+                <div class="jenjang-panel" id="jenjang-smp" role="tabpanel" hidden>
+                    <p class="jenjang-panel-lead">2 mata pelajaran wajib untuk jenjang SMP.</p>
+                    <div class="mapel-grid mapel-grid-2">
+                        <a href="https://tka.logicus.online/#materi-smp" class="mapel-card">
+                            <span class="mapel-icon" aria-hidden="true"><i class="fa-solid fa-square-root-variable"></i></span>
+                            <div class="mapel-body">
+                                <h3>Matematika</h3>
+                                <p>Aljabar, geometri &amp; pengukuran, hingga data dan peluang mulai diperdalam.</p>
+                            </div>
+                            <span class="mapel-status mapel-status-ready">Tersedia <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <div class="mapel-card mapel-card-soon">
+                            <span class="mapel-icon" aria-hidden="true"><i class="fa-solid fa-flask-vial"></i></span>
+                            <div class="mapel-body">
+                                <h3>IPA</h3>
+                                <p>Konsep dasar fisika, kimia, dan biologi terpadu untuk jenjang SMP.</p>
+                            </div>
+                            <span class="mapel-status">Segera Hadir</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- KELAS XII -->
-                <div class="kelas-panel" id="kelas-xii" role="tabpanel" hidden>
-                    <div class="kelas-panel-head">
-                        <span class="regulasi-tag">Fase F · Lanjutan</span>
-                        <p>5 kelompok materi inti Kimia Kelas XII.</p>
+                <!-- SMA -->
+                <div class="jenjang-panel" id="jenjang-sma" role="tabpanel" hidden>
+                    <p class="jenjang-panel-lead">4 mata pelajaran wajib untuk jenjang SMA.</p>
+                    <div class="mapel-grid mapel-grid-4">
+                        <a href="https://tka.logicus.online/#materi-sma" class="mapel-card">
+                            <span class="mapel-icon" aria-hidden="true"><i class="fa-solid fa-square-root-variable"></i></span>
+                            <div class="mapel-body">
+                                <h3>Matematika</h3>
+                                <p>Fungsi, trigonometri, program linear, hingga statistika tingkat lanjut.</p>
+                            </div>
+                            <span class="mapel-status mapel-status-ready">Tersedia <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a href="https://learn.logicus.online/fisika" class="mapel-card">
+                            <span class="mapel-icon" aria-hidden="true"><i class="fa-solid fa-atom"></i></span>
+                            <div class="mapel-body">
+                                <h3>Fisika</h3>
+                                <p>Mekanika, gelombang, listrik-magnet, hingga konsep dasar fisika modern.</p>
+                            </div>
+                            <span class="mapel-status mapel-status-ready">Tersedia <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a href="https://learn.logicus.online/kimia" class="mapel-card">
+                            <span class="mapel-icon" aria-hidden="true"><i class="fa-solid fa-flask"></i></span>
+                            <div class="mapel-body">
+                                <h3>Kimia</h3>
+                                <p>Stoikiometri, struktur atom, ikatan kimia, hingga kimia organik dasar.</p>
+                            </div>
+                            <span class="mapel-status mapel-status-ready">Tersedia <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a href="https://learn.logicus.online/biologi" class="mapel-card">
+                            <span class="mapel-icon" aria-hidden="true"><i class="fa-solid fa-dna"></i></span>
+                            <div class="mapel-body">
+                                <h3>Biologi</h3>
+                                <p>Sel, genetika, sistem tubuh manusia, hingga ekosistem dan bioteknologi.</p>
+                            </div>
+                            <span class="mapel-status mapel-status-ready">Tersedia <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
                     </div>
-                    <div class="topik-grid topik-grid-5">
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-arrow-down-wide-short"></i> Sifat Koligatif Larutan</h3>
-                            <ul>
-                                <li>Penurunan tekanan uap</li>
-                                <li>Kenaikan titik didih &amp; penurunan titik beku</li>
-                                <li>Tekanan osmotik</li>
-                            </ul>
-                        </article>
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-bolt"></i> Elektrokimia</h3>
-                            <ul>
-                                <li>Sel volta &amp; deret volta</li>
-                                <li>Sel elektrolisis</li>
-                                <li>Hukum Faraday</li>
-                            </ul>
-                        </article>
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-mound"></i> Kimia Unsur</h3>
-                            <ul>
-                                <li>Kelimpahan unsur di alam</li>
-                                <li>Sifat unsur golongan utama</li>
-                                <li>Unsur transisi periode 4</li>
-                            </ul>
-                        </article>
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-diagram-project"></i> Kimia Organik</h3>
-                            <ul>
-                                <li>Gugus fungsi &amp; tata nama senyawa karbon</li>
-                                <li>Isomer struktur &amp; ruang</li>
-                                <li>Reaksi identifikasi senyawa karbon</li>
-                            </ul>
-                        </article>
-                        <article class="topik-card">
-                            <h3><i class="fa-solid fa-dna"></i> Makromolekul</h3>
-                            <ul>
-                                <li>Karbohidrat, protein &amp; lemak</li>
-                                <li>Polimer alami &amp; sintetis</li>
-                                <li>Penerapan dalam kehidupan sehari-hari</li>
-                            </ul>
-                        </article>
-                    </div>
-                </div>
-
-                <div class="materi-note" data-reveal>
-                    <i class="fa-solid fa-triangle-exclamation"></i>
-                    <p>Rangkuman ini disusun berdasarkan struktur kurikulum &amp; Capaian Pembelajaran Kimia yang berlaku umum di sekolah Indonesia. Cakupan detail dapat sedikit berbeda antar sekolah tergantung fase transisi kurikulum yang diikuti — selalu sesuaikan dengan Alur Tujuan Pembelajaran (ATP) dari sekolah masing-masing.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ============ PEMBELAJARAN MENDALAM ============ -->
-        <section class="pembelajaran-mendalam" id="pembelajaran-mendalam">
+        <!-- ============ CARA BELAJAR ============ -->
+        <section class="cara-belajar" id="cara-belajar">
             <div class="container">
-                <p class="section-eyebrow section-eyebrow--light" data-reveal>Pendekatan Kami</p>
-                <h2 data-reveal>Belajar Kimia dengan Pembelajaran Mendalam</h2>
-                <p class="section-lead section-lead--light" data-reveal>Mengikuti semangat Permendikdasmen No. 13 Tahun 2025: mendorong murid tidak sekadar menghafal reaksi, tapi memahami secara utuh dan mengaitkannya dengan konteks nyata.</p>
+                <p class="section-eyebrow section-eyebrow--light" data-reveal>Cara Belajar di Logicus</p>
+                <h2 data-reveal>Tiga Langkah Sederhana</h2>
 
-                <div class="pm-grid">
-                    <div class="pm-card" data-reveal>
-                        <span class="pm-index">1</span>
-                        <h3>Memahami</h3>
-                        <p class="pm-sub">Understanding</p>
-                        <p>Menangkap konsep di balik rumus — misalnya, memahami <em>mengapa</em> laju reaksi dipengaruhi suhu, bukan sekadar menghafal persamaan Arrhenius.</p>
+                <div class="cara-grid">
+                    <div class="cara-card" data-reveal>
+                        <span class="cara-index">1</span>
+                        <h3>Pilih Jenjang &amp; Mapel</h3>
+                        <p>Sesuaikan dengan kelas dan mata pelajaran yang sedang dipelajari.</p>
                     </div>
-                    <div class="pm-card" data-reveal>
-                        <span class="pm-index">2</span>
-                        <h3>Mengaplikasi</h3>
-                        <p class="pm-sub">Applying</p>
-                        <p>Menghubungkan konsep dengan konteks nyata — dari perkaratan besi, baterai, hingga kenapa air laut sulit dibekukan.</p>
+                    <div class="cara-card" data-reveal>
+                        <span class="cara-index">2</span>
+                        <h3>Pahami Bertahap</h3>
+                        <p>Materi disusun dari level pengetahuan &amp; pemahaman, aplikasi, hingga penalaran — bukan loncat langsung ke soal sulit.</p>
                     </div>
-                    <div class="pm-card" data-reveal>
-                        <span class="pm-index">3</span>
-                        <h3>Merefleksi</h3>
-                        <p class="pm-sub">Reflecting</p>
-                        <p>Mengevaluasi cara berpikir sendiri — menyadari miskonsepsi, dan memperbaiki pemahaman berdasarkan bukti dan penalaran.</p>
+                    <div class="cara-card" data-reveal>
+                        <span class="cara-index">3</span>
+                        <h3>Latih dengan Konteks Nyata</h3>
+                        <p>Setiap konsep dikaitkan dengan contoh yang masuk akal, supaya benar-benar melekat, bukan sekadar dihafal semalam.</p>
                     </div>
                 </div>
             </div>
@@ -288,8 +184,8 @@
         <section class="cta-band" id="konsultasi">
             <div class="container cta-inner">
                 <div>
-                    <h2>Butuh pendampingan belajar Kimia yang lebih terarah?</h2>
-                    <p>Program Logicus membantu siswa memahami konsep Kimia dari akar masalahnya — bukan sekadar mengejar nilai ujian.</p>
+                    <h2>Butuh pendampingan lebih dari sekadar materi?</h2>
+                    <p>Jadwalkan konsultasi gratis dan temukan program Logicus yang sesuai kebutuhan anak Anda.</p>
                 </div>
                 <a href="https://logicus.online/#konsultasi" class="btn btn-lg cta-band-btn">Konsultasi Gratis <i class="fa-solid fa-arrow-right"></i></a>
             </div>
@@ -331,16 +227,16 @@
                     <li><a href="https://logicus.online">logicus.online</a></li>
                     <li><a href="https://blog.logicus.online">blog.logicus.online</a></li>
                     <li><a href="https://tka.logicus.online">tka.logicus.online</a></li>
-                    <li><a href="https://belajar.logicus.online">belajar.logicus.online</a></li>
+                    <li><a href="https://learn.logicus.online">learn.logicus.online</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h3>Materi Kimia</h3>
+                <h3>Mapel Wajib</h3>
                 <ul class="framework-list">
-                    <li><span>Kelas X</span> Fondasi &amp; Pengantar</li>
-                    <li><span>Kelas XI</span> Kimia Formal Dimulai</li>
-                    <li><span>Kelas XII</span> Materi Lanjutan</li>
+                    <li><span>SD</span> Matematika</li>
+                    <li><span>SMP</span> Matematika &amp; IPA</li>
+                    <li><span>SMA</span> Matematika, Fisika, Kimia, Biologi</li>
                 </ul>
             </div>
         </div>
@@ -350,6 +246,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="kimia.js"></script>
+    <script src="learn.js"></script>
 </body>
 </html>
