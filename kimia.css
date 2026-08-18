@@ -21,12 +21,12 @@
 .breadcrumb [aria-current="page"] { color: var(--navy); font-weight: 600; }
 
 /* ============ HERO ============ */
-.kimia-hero {
+.mapel-hero {
     background: linear-gradient(180deg, var(--cream) 0%, #ffffff 100%);
     padding: 56px 0 48px;
     text-align: center;
 }
-.kimia-hero-inner { max-width: 760px; margin: 0 auto; }
+.mapel-hero-inner { max-width: 760px; margin: 0 auto; }
 .mapel-icon-lg {
     width: 68px; height: 68px;
     border-radius: 18px;
@@ -38,11 +38,11 @@
     font-size: 1.7rem;
     margin-bottom: 20px;
 }
-.kimia-hero h1 {
+.mapel-hero h1 {
     font-size: clamp(2rem, 4.5vw, 2.9rem);
     letter-spacing: -0.01em;
 }
-.kimia-hero-lead {
+.mapel-hero-lead {
     font-size: 1.08rem;
     color: var(--charcoal);
     max-width: 62ch;
